@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class = 'card' id = 'card'>
+    <!--Udacity project-->
+    <div class='request'>
+        <div id = "app">
+            <div class ="holder-headline">
+              Weather Journal App
+            </div>
+            <div class ="holder-zip">
+              <label for="zip">Enter Zipcode here</label>
+              <input type="text" id="zip" placeholder="enter zip code here:exam:12511">
+              <div class="msg" id = 'msg'></div>
+            </div>
+            <div class ="holder-feel">
+              <label for="feelings">How are you feeling today?</label>
+              <textarea class= "myInput" id="feelings" placeholder="Enter your feelings here" rows="9" cols="50"></textarea>
+              <button id="generate" type = "submit"> Generate </button>
+            </div>
+            <!-- <div class ="holder entry">
+              <div class = "title">Most Recent Entry</div>
+             <div id = "entryHolder">
+              <div id = "date"></div> 
+             <div id = "temp"></div>
+             <div id = "content"></div>
+            </div>
+            </div> -->
+            </div>
+    </div>
+
+    <!--Me Additional-->
+    <div class="response">
+        <div class='date-info'>
+            <h1 class='day-name' id="day">Sunday</h1>
+            <h2 class="date" id='date'>8 Dec, 2020</h2>
+            <span class='show'>Zip-Code : </span>
+            <span class='simple-info' id='code'></span>
+            <i class="fa fa-map-marker fa-lg"></i>
+        </div>
+        <div class="temp-info">
+            <i class ="material-icons" id='sun'>wb_sunny</i>
+            <h1 id="temp" class='temp'> 33 &#8451</h1>
+            <div class="feel" id="content"></div>
+            <button id="return" type = "submit"> Back </button>
+        </div>
+
+     </div>
+   </div>
+</div>
+
+    <!--Scripts-->
+    <script src='js/app.js'></script>
+</body>
+</html>

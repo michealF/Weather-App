@@ -1,0 +1,169 @@
+/* Start Global Settings */
+* {
+    box-sizing: border-box;
+    line-height : 1.25em;
+}
+body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+     background-color: #1b1b228f;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective : 1000px;
+}
+
+/*End Global Settings*/
+
+/* Start Card*/
+.card {
+    border-radius: 25px;
+    color: Black;
+    height: 510px;
+    width: 300px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+}
+.card > div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius:25px;
+}
+/* Set It To Run When Clicked Button*/
+.rotate {
+    transform: rotateY(180deg);
+}
+.re-rotate {
+    transform: rotateY(0deg)
+}
+/* End This For Notes*/
+
+/* Start Request*/
+.card .request {
+    z-index : 2;
+    backface-visibility: hidden;
+    background-color: #252f31;
+    color: #FFF;
+    text-align: center;
+}
+.request .holder-headline 
+{
+    font-size: 25px;
+    margin-top: 35px;
+    font-weight: 700;
+}
+.request .holder-zip label {
+  display: block;
+  color: #D1D6DA;
+  margin: 20px 0 10px;
+  font-size: 20px;
+}
+.request .holder-zip input[type='text'] {
+    background-color: #4B5557;
+    color: #FFF;
+    padding: 10px;
+    border: 0;
+    width: 85%;
+    margin-bottom: 10px;
+}
+.request .holder-zip .msg {
+    margin-left: 21px;
+    padding: 10px;
+    width: 85%;
+    background-color: #FFF;
+    color: #F00;
+    display: none;
+}
+.request .holder-feel label {
+    display: block;
+  color: #D1D6DA;
+  font-size: 20px;
+  margin: 10px 0;
+}
+.request .myInput {
+    background-color: #4B5557;
+    color: #FFF;
+    padding: 10px;
+    border: 0;
+    width: 85%;
+    margin-bottom: 10px;
+    height: 180px;
+}
+.request .holder-feel button {
+    background-color: #191E22;
+    color: #FFF;
+    padding: 10px 20px;
+    border: 0;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+/*End Request */
+
+/* Start Response */
+.card .response {
+    z-index: 1;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    /* display: none; */
+    background-image: url('../imags/images.jpg');
+    background-size: cover;
+    color: #0b2e75;
+}
+.response .date-info {
+    padding: 20px;
+}
+.response .day-name {
+    margin-top: 35px;
+    margin-left: 10px;
+}
+.response .date {
+    padding-left: 10px;
+    margin-top: -10px;
+    font-size: 20px;
+}
+.response  .show {
+    margin-left: 10px;
+}
+.response .fa-map-marker {
+    color: #0759e2;
+    padding-left: 10px;
+    font-size: 26px;
+}
+.response .simple-info {
+    padding-left: 10px;
+    font-size: 17px;
+}
+.response .temp-info {
+    padding: 30px;
+    margin-top: 60px;
+}
+.response .temp-info #sun {
+    font-size: 50px;
+    color: rgb(238, 215, 5)
+}
+.response .temp-info .feel {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFF;
+    margin-top: -10px;
+    color: #092469;
+}
+#return{
+    background-color: #2b70ab;
+    color:#f5e44a;
+    padding: 10px 20px;
+    border: 0;
+    margin: 18px 0 12px 83px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+/* End Response */
