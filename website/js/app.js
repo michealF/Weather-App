@@ -7,7 +7,7 @@ let dayName = days[new Date().getDay()];
 
 //URL For Open Weather map Parts
 let baseURL = 'http://api.openweathermap.org/data/2.5/weather?zip=';
-const apiKey = '&appid=2def57304f539da0e65fd8d084cb3975&units=imperial';
+const apiKey = '&appid='; //While submitting project you can remove apikey
 
 // add Event Listener 
 document.getElementById('generate').addEventListener('click', (e) => {
